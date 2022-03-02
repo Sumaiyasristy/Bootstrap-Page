@@ -1,0 +1,225 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;700&display=swap');
+
+*{
+    font-family: 'Sora', sans-serif;
+}
+
+
+
+.logo{
+    width: 100px;
+}
+
+h1,h2,h3,h4,h5,h6,
+.display-4 {
+    font-weight: 700;
+    color:var(--dark);
+    
+}
+a{
+    color: var(--dark);
+    text-decoration: none;
+}
+.Hero{
+    background: url(https://i.gadgets360cdn.com/large/remove_bg_1200x675_thumb_1612160350051.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+
+}
+.Hero::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba( 21, 20, 51, 0.8);
+    z-index: -1;
+}
+:root{
+    --primary: #0d6efd;
+    --dark: #21252f;
+    --body:#888;
+    --box-shadow:0 8px 22px rgba(0,0,0,0) ;
+
+}
+body{
+    font-family: sora,sans-serif;
+    line-height: 1.7;
+    color: var(--body);
+}.nav-link{
+    font-size: 14px;
+    font-weight: 700;
+
+}
+.btn{
+    padding: 8px 8px;
+    border-width: 2px;
+    border-radius: 0;
+}
+.cardi{
+    margin-top: 10%;
+    border: none;
+}
+.card-effect{
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 25px;
+    transition: all 0.35s ease;
+}
+.card-effect:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.Designing{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30PX;
+    padding: 3%;
+  
+    margin-bottom: 3%;
+}
+.Designing:hover .iconbox{
+    background-color: #fff;
+    color: var(--primary);
+}
+.Designing:hover h5,
+.Designing:hover p{
+    color: #fff;
+
+}
+.Designing:hover::after{
+    opacity:1 ;
+    top: 0;
+}
+.iconbox{
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 32px;
+    border-radius: 100px;
+    flex: none;
+}
+.navbar{
+    box-shadow: var(--box-shadow);
+}
+.service{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+
+}
+.Designing::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:100%;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    opacity: 0;
+
+    transition: all 0.4s ease;
+}
+.pricing{
+    margin-top: 10%;
+}
+.col-img{
+    background: url(https://i.pinimg.com/236x/77/71/68/7771683223d86b237a3304d6f32828b9--headshot-poses-headshot-photography.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    
+    
+    
+}
+.img{
+    width: 50%;
+}
+.PRoject{
+    margin-top: 10%;
+
+}
+.PRoject{
+    position: relative;
+    overflow: hidden;
+}
+.projects{
+    margin-top: 10%;
+}
+.PRoject .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba( 21, 20, 51, 0.8);
+    z-index: -1;
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+    opacity: 0;
+
+
+}
+.PRoject.img{
+    transition: all 0.4s ease;
+}
+.PRoject:hover.overlay{
+    opacity: 1;
+}
+.PRoject:hover img{
+    transform: scale(1.1);
+}
+.pricing i{
+    font-size: 20px;
+    color: var(--primary);
+}
+.pricing ul li{
+    margin-top: 8px;
+}
+.team{
+    margin-top: 10%;
+}
+
+.fa-edit{
+    color: #000 !important;
+}
+.fa-user{
+    color: #000 !important;
+}
+.fa-download{
+    color: #000 !important; 
+}
+.team-member img{
+    width: 125px;
+    height: 125px;
+    border-radius: 100px;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+.social-icons a {
+    width: 34px;
+    height: 34px;
+    background-color: var(--primary);
+    border-radius: 2px solid var(--primary) ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin-left: 5px;
+
+}
